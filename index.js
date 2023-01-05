@@ -18,32 +18,32 @@ skillsEl.innerHTML = skillsHTML;
 
 //display "Home"
 
-
-
-function dislpayHome() {
+function hideAllPages() {
+    document.getElementById("skills").style.display = "none";
     document.getElementById("skills").style.display = "none";
     document.getElementById("languages").style.display = "none";
     document.getElementById("project").style.display = "none";
+    document.getElementById("home").style.display = "none";
+}
+
+
+
+function dislpayHome() {
+    hideAllPages();
     document.getElementById("home").style.display = "block";
 }
 function displaySkills() {
     console.warn("trebuie sa afisam skills page");
-    document.getElementById("home").style.display = "none";
-    document.getElementById("languages").style.display = "none";
-    document.getElementById("project").style.display = "none";
+    hideAllPages();
     document.getElementById("skills").style.display = "block";
 }
 function displayLanguages() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("project").style.display = "none";
+    hideAllPages();
     document.getElementById("languages").style.display = "block";
 }
 
 function displayProject() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("languages").style.display = "none";
+    hideAllPages();
     document.getElementById("project").style.display = "block";
 }
 
