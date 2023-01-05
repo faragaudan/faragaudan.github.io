@@ -16,8 +16,40 @@ for (var i = 0; i < 4;) {
 console.info(skillsHTML);
 skillsEl.innerHTML = skillsHTML;
 
+//display "Home"
 
-document.getElementById('Home').style.display = 'block';
+
+
+function dislpayHome() {
+    document.getElementById("skills").style.display = "none";
+    document.getElementById("languages").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("home").style.display = "block";
+}
+function displaySkills() {
+    console.warn("trebuie sa afisam skills page");
+    document.getElementById("home").style.display = "none";
+    document.getElementById("languages").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("skills").style.display = "block";
+}
+function displayLanguages() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("skills").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("languages").style.display = "block";
+}
+
+function displayProject() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("skills").style.display = "none";
+    document.getElementById("languages").style.display = "none";
+    document.getElementById("project").style.display = "block";
+}
+
+displayHome();
+
+
 
 
 
