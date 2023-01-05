@@ -17,6 +17,9 @@ console.info(skillsHTML);
 skillsEl.innerHTML = skillsHTML;
 
 
+document.getElementById('Home').style.display = 'block';
+
+
 
 
 
