@@ -18,12 +18,14 @@ skillsEl.innerHTML = skillsHTML;
 
 var pageIds = ["home", "skills", "languages", "projects"];
 
-function hidePage(id) {
-  hide(id);
-}
+// function hidePage(id) {
+//     hide(id);
+// }
 
 function hideAllPages() {
-  pageIds.forEach(hidePage);
+  pageIds.forEach(function (pageId) {
+    hide(pageId);
+  });
   //   hide("skills");
   //   hide("languages");
   //   hide("projects");
