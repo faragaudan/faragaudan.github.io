@@ -1,150 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cv</title>
 
     <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <img src="self.jpg.jpg" height="150px" width="150px">
+      <img src="self.jpg.jpg" height="150px" width="150px" />
 
+      <h2 id="job-title">
+        Medical Assistant & Interior Design at my home & Part-Time SameDay
+        merchandise receptionist
+      </h2>
 
-        <h2 id="job-title">
-            Medical Assistant & Interior Design at my home & Part-Time SameDay merchandise receptionist
-        </h2>
+      <p style="color: red; text-align: center">
+        <strong>Welcome</strong> to my "home"
+      </p>
 
-
-        <p style="color: red; text-align:center;">
-            <strong>Welcome</strong> to my "home"
-        </p>
-
-        <ul id="top-meniu-bar">
-            <li><a href="#" onclick="displayHome()">HOME</a></li>
-            <li><a href="#" onclick="displaySkills()">Skills</a></li>
-            <li><a href="#" onclick="displayLanguage()">Known Languages</a></li>
-            <li><a href="#" onclick="displayProjects()">Projects</a></li>
-        </ul>
+      <ul id="top-meniu-bar">
+        <li><a href="#" onclick="displayHome()">HOME</a></li>
+        <li><a href="#" onclick="displaySkills()">Skills</a></li>
+        <li><a href="#" onclick="displayLanguages()">Known Languages</a></li>
+        <li><a href="#" onclick="displayProjects()">Projects</a></li>
+      </ul>
     </header>
 
     <section id="content">
-        <div id="side-menu">
-            <section>
-                <form action="">
-                    <div>
-                        <label for="subscriberEmail">Email</label>
-                        <input type="email" required="required" name="Email" id="subscriberEmail"
-                            placeholder="your@email.com">
-                    </div>
-
-                    <div>
-                        <label for="Subscriber">Name</label>
-                        <input type="text" required name="Nume" id="Subscriber" placeholder="Full name">
-                        <button type="submit">Subscribe</button>
-                    </div>
-
-
-
-                </form>
-            </section>
-
-            <section>
-                To be continued
-            </section>
-        </div>
-
-
-
-        <div id="main">
-
-            <div id="Skilld" class="page">
-
-                <h2>Skills</h2>
-
-                <ul>
-                    <li class="favorite">HTML</li>
-                    <li class="favorite">CSS</li>
-                    <li>JS</li>
-                </ul>
-
+      <div id="side-menu">
+        <section>
+          <form action="">
+            <div>
+              <label for="subscriberEmail">Email</label>
+              <input
+                type="email"
+                required="required"
+                name="Email"
+                id="subscriberEmail"
+                placeholder="your@email.com"
+              />
             </div>
 
             <div>
-                <div id="Home" class="page">
-                    <h2>Home</h2>
-                    <p>
-                        Some info about me
-                    </p>
-                </div>
+              <label for="Subscriber">Name</label>
+              <input
+                type="text"
+                required
+                name="Nume"
+                id="Subscriber"
+                placeholder="Full name"
+              />
+              <button type="submit">Subscribe</button>
             </div>
+          </form>
+        </section>
 
+        <section>To be continued</section>
+      </div>
 
+      <div id="main">
+        <div id="skills" class="page">
+          <h2>Skills</h2>
 
-            <div id="Language" class="page">
-
-                <h2>Known language</h2>
-
-                <table border="1">
-                    <tr>
-                        <th>Language</th>
-                        <th>Level</th>
-                    </tr>
-                    <tr>
-                        <td>Romanian</td>
-                        <td>Natyve</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>Proficient</td>
-
-                    </tr>
-                </table>/
-
-            </div>
-            <div id="projects" class="page">
-                <h2>Projects</h2>
-
-            </div>
-
-
+          <ul id="skills-list">
+            <li class="favorite">HTML</li>
+            <li class="favorite">CSS</li>
+            <li>JS</li>
+          </ul>
         </div>
+
+        <div>
+          <div id="home" class="page">
+            <h2>Home</h2>
+            <p>Some info about me</p>
+          </div>
+        </div>
+
+        <div id="languages" class="page">
+          <h2>Known language</h2>
+
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Natyve</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Proficient</td>
+            </tr>
+          </table>
+          /
+        </div>
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+        </div>
+      </div>
     </section>
 
-
-
     <footer>
-        <a target="_blank" href="https://www.olx.ro/">OLX</a>
+      <a target="_blank" href="https://www.olx.ro/">OLX</a>
     </footer>
 
-
-    <script src="index.js">
-
-        console.info("page loaded");
-        console.debug(2 + 3);
-        console.warn(2 * (3 + 1));
-        var employed = false;
-        console.error(employed);
-        var age = 26; // number
-
-        var user = "Danny";
-        user = user + "Faragau";
-
-        var skills = { "html", "css"};
-
-        var dan = {
-            age: 26,
-            employed: true
-        };
-
-        var motto = document.getElementById("job-title")
-
-    </script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
