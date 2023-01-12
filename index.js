@@ -41,22 +41,29 @@ function hide(id) {
 }
 
 function displayHome() {
-  hideAllPages();
-  show("home");
+  //   hideAllPages();
+  displayPage("home");
 }
 function displaySkills() {
   console.warn("trebuie sa afisam skills page");
-  hideAllPages();
-  show("skills");
+  //   hideAllPages();
+  displayPage("skills");
 }
 function displayLanguages() {
-  hideAllPages();
-  show("languages");
+  //   hideAllPages();
+  displayPage("languages");
 }
 
 function displayProjects() {
-  hideAllPages();
-  show("projects");
+  //   hideAllPages();
+  displayPage("projects");
 }
 
-displayHome();
+function displayPage(id) {
+  hideAllPages();
+  show(id);
+}
+
+displayPage("home");
+
+// displayHome();
