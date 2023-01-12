@@ -40,24 +40,24 @@ function hide(id) {
   document.getElementById(id).style.display = "none";
 }
 
-function displayHome() {
-  //   hideAllPages();
-  displayPage("home");
+// function displayHome() {
+//   //   hideAllPages();
+//   displayPage("home");
 }
-function displaySkills() {
-  console.warn("trebuie sa afisam skills page");
-  //   hideAllPages();
-  displayPage("skills");
+// function displaySkills() {
+//   console.warn("trebuie sa afisam skills page");
+//   //   hideAllPages();
+//   displayPage("skills");
 }
-function displayLanguages() {
-  //   hideAllPages();
-  displayPage("languages");
+// function displayLanguages() {
+//   //   hideAllPages();
+//   displayPage("languages");
 }
 
-function displayProjects() {
-  //   hideAllPages();
-  displayPage("projects");
-}
+// function displayProjects() {
+//   //   hideAllPages();
+//   displayPage("projects");
+// }
 
 function displayPage(id) {
   hideAllPages();
