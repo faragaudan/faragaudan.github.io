@@ -12,6 +12,7 @@ td {
 }
 
 #header-wrapper {
+  align-items: center;
   display: flex;
   flex-direction: row;
 }
