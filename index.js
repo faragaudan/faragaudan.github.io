@@ -43,6 +43,20 @@ function displayPage(id) {
   show(id);
 }
 
-displayPage("home");
+function initMenu() {
+  console.warn("init meniu");
 
-// displayHome();
+  document
+    .getElementById("top-meniu-bar")
+    .addEventListener("click", function (e) {
+      if (e.target.matches("a")) {
+        var id = e.target.getAttribute("data-page");
+        var id = e.target.dataset.page;
+
+        displayPage(id);
+      }
+    });
+}
+
+displayPage("home");
+initMenu();
