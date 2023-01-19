@@ -113,3 +113,7 @@ img {
 }
 
 /* doua sectiuni 1:poza si 2:descrierea si meniul */
+
+#skills-list span {
+  color: gray;
+}
