@@ -1,16 +1,17 @@
 var skillsEl = document.getElementById("skills-list");
 
-var skills = ["HTML", "CSS", "JS", "Drive"];
+var skills = [
+  { name: "HTML", endorcements: 5 },
+  { name: "CSS", endorcements: 4 },
+  { name: "JS", endorcements: 3 },
+  { name: "Drive", endorcements: 2 },
+];
 
 var skillsHTML = "";
-var i = 0;
 
-for (var i = 0; i < 4; ) {
-  skillsHTML += "<li>" + skills[i] + "</li>";
-  i++;
-}
-
-console.info(skillsHTML);
+skills.forEach(function (skill) {
+  skillsHTML += "<li>" + skill.name + " - " + skill.endorcements + "</li>";
+});
 
 skillsEl.innerHTML = skillsHTML;
 
@@ -50,7 +51,7 @@ function initMenu() {
     .getElementById("top-meniu-bar")
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
-        var id = e.target.getAttribute("data-page");
+        // var id = e.target.getAttribute("data-page");
         var id = e.target.dataset.page;
 
         displayPage(id);
@@ -58,5 +59,5 @@ function initMenu() {
     });
 }
 
-displayPage("home");
+displayPage("skills");
 initMenu();
