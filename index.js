@@ -9,19 +9,13 @@ var skills = [
 
 var skillsHTML = "";
 
-skills.forEach(function (skill) {
-  skillsHTML += "<li>" + skill.name + " - " + skill.endorcements + "</li>";
+var skillsHTML = skills.map(function (skill) {
+  return "<li>" + skill.name + " - " + skill.endorcements + "</li>";
 });
 
-skillsEl.innerHTML = skillsHTML;
-
-//display "Home"
+skillsEl.innerHTML = skillsHTML.join("");
 
 var pageIds = ["home", "skills", "languages", "projects", "rubik"];
-
-// function hidePage(id) {
-//     hide(id);
-// }
 
 function hideAllPages() {
   var pages = document.querySelectorAll(".page");
