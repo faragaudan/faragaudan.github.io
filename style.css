@@ -11,6 +11,14 @@ td {
   background: yellowgreen;
 }
 
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#header-wrapper img {
+  border: 5px solid #334455;
+}
+
 #job-title {
   text-align: center;
   color: chartreuse;
@@ -19,7 +27,6 @@ td {
 .favorite {
   font-weight: bold;
   color: blue;
-
 }
 
 .table {
@@ -68,10 +75,6 @@ td {
   color: #334455;
   background-color: #fff;
 }
-
-
-
-
 
 html {
   height: 100%;

@@ -16,20 +16,18 @@ skillsEl.innerHTML = skillsHTML;
 
 //display "Home"
 
-var pageIds = ["home", "skills", "languages", "projects"];
+var pageIds = ["home", "skills", "languages", "projects", "rubik"];
 
 // function hidePage(id) {
 //     hide(id);
 // }
 
 function hideAllPages() {
-  pageIds.forEach(function (pageId) {
-    hide(pageId);
+  var pages = document.querySelectorAll(".page");
+  pages.forEach(function (page) {
+    console.info("inside pages.forEach", page.id);
+    hide(page.id);
   });
-  //   hide("skills");
-  //   hide("languages");
-  //   hide("projects");
-  //   hide("home");
 }
 
 function show(id) {
