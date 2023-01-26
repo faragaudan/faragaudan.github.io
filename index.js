@@ -1,19 +1,17 @@
-var skillsEl = document.getElementById("skills-list");
-
-var skills = [];
-
-var r1 = fetch("skills.json");
+const r1 = fetch("skills.json");
 r1.then(function (raspuns) {
-  var r2 = raspuns.json();
+  const r2 = raspuns.json();
   r2.then(function (skills) {
     displaySkills(skills);
   });
 });
 
 function displaySkills(skills) {
-  var skillsHTML = skills.map(function (skill) {
+  const skillsHTML = skills.map(function (skill) {
     return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
   });
+
+  const skillsEl = document.getElementById("skills-list");
 
   skillsEl.innerHTML = skillsHTML.join("");
 }
@@ -21,7 +19,7 @@ function displaySkills(skills) {
 var pageIds = ["home", "skills", "languages", "projects", "rubik"];
 
 function hideAllPages() {
-  var pages = document.querySelectorAll(".page");
+  const pages = document.querySelectorAll(".page");
   pages.forEach(function (page) {
     console.info("inside pages.forEach", page.id);
     hide(page.id);
@@ -49,7 +47,7 @@ function initMenu() {
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
         // var id = e.target.getAttribute("data-page");
-        var id = e.target.dataset.page;
+        const id = e.target.dataset.page;
 
         displayPage(id);
       }
